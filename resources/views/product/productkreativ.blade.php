@@ -27,6 +27,7 @@
                         src="img/product-makanan-1.png"
                         alt="Product Thumbnail"
                         class="tab-image"
+                          
                       />
                     </a>
                   </figure>
@@ -100,7 +101,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{ url ('/checkout/detailcheckout') }}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-makanan-2.png"
                         alt="Product Thumbnail"
@@ -178,7 +179,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{ url ('/checkout/detailcheckout') }}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-makanan-3.png"
                         alt="Product Thumbnail"
@@ -257,7 +258,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{ url ('/checkout/detailcheckout') }}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-makanan-4.png"
                         alt="Product Thumbnail"
@@ -335,7 +336,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{ url ('/checkout/detailcheckout') }}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-thumb-15.png"
                         alt="Product Thumbnail"
@@ -415,7 +416,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{ url ('/produk') }}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-thumb-16.png"
                         alt="Product Thumbnail"
@@ -494,7 +495,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{url ('/produk')}}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-thumb-17.png"
                         alt="Product Thumbnail"
@@ -573,7 +574,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{url ('/produk')}}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-thumb-18.png"
                         alt="Product Thumbnail"
@@ -652,7 +653,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{url ('/produk')}}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-thumb-20.png"
                         alt="Product Thumbnail"
@@ -731,7 +732,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{url ('/produk')}}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-thumb-31.png"
                         alt="Product Thumbnail"
@@ -810,7 +811,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{url ('/produk')}}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-thumb-15.png"
                         alt="Product Thumbnail"
@@ -889,7 +890,7 @@
               <div class="col-01">
                 <div class="product-item">
                   <figure>
-                    <a href="{{url ('/produk')}}" title="Product Title">
+                    <a href="{{ url ('/detailcheckout') }}" title="Product Title">
                       <img
                         src="img/product-makanan-1.png"
                         alt="Product Thumbnail"

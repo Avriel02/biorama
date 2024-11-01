@@ -456,7 +456,7 @@
               <div class="service-inner">
                 <div class="service-img">
                   <img
-                    src="img/workshop-1.jpg"
+                    src="img/workshop-2.jpg"
                     class="img-fluid w-80 rounded"
                     alt="Image"
                   />
@@ -498,7 +498,7 @@
               <div class="service-inner">
                 <div class="service-img">
                   <img
-                    src="img/workshop-2.jpg"
+                    src="img/workshop-3.jpg"
                     class="img-fluid w-100 rounded"
                     alt="Image"
                   />
@@ -540,7 +540,7 @@
               <div class="service-inner">
                 <div class="service-img">
                   <img
-                    src="img/workshop-1.jpg"
+                    src="img/workshop-4.jpg"
                     class="img-fluid w-100 rounded"
                     alt="Image"
                   />
@@ -582,7 +582,7 @@
               <div class="service-inner">
                 <div class="service-img">
                   <img
-                    src="img/workshop-2.jpg"
+                    src="img/workshop-3.jpg"
                     class="img-fluid w-100 rounded"
                     alt="Image"
                   />
@@ -666,7 +666,7 @@
               <div class="service-inner">
                 <div class="service-img">
                   <img
-                    src="img/workshop-1.jpg"
+                    src="img/workshop-2.jpg"
                     class="img-fluid w-100 rounded"
                     alt="Image"
                   />
@@ -823,7 +823,7 @@
     <!-- Features End -->
 
     <!-- Testimonial Start -->
-    <div class="container-fluid testimonial overflow-hidden pb-5">
+ <div class="container-fluid testimonial overflow-hidden pb-5">
       <div class="container py-5">
         <div
           class="section-title text-center mb-5 wow fadeInUp"

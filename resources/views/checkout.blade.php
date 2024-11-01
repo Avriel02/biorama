@@ -1,285 +1,370 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Checkout</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-      body {
-        font-family: Arial, sans-serif;
-        background-color: #f3f3f3;
-        margin: 0;
-        padding: 20px;
-        background-image: url("img/image.png");
-        background-size: cover;
-        background-position: center;
-      }
+    <meta charset="utf-8" />
+    <title>BIORAMA</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="keywords" />
+    <meta content="" name="description" />
+    <link
+      rel="shortcut icon"
+      href="img/logoo.png"
+      type="image/x-icon"
+    />
 
-      .container {
-        max-width: 1100px;
-        margin: 0 auto;
-        background-color: white;
-        padding: 20px;
-        border-radius: 30px;
-        box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px,
-          rgba(14, 30, 37, 0.32) 0px 2px 16px;
-        position: relative;
-        min-height: 39rem;
-        background-size: cover;
-        background-position: center;
-      }
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
 
-      .grid {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 20px;
-      }
+    <!-- Icon Font Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
 
-      @media (min-width: 768px) {
-        .grid {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
+    <!-- Libraries Stylesheet -->
+    <link
+      href="lib/detail/lightbox/css/lightbox.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="lib/detail/owlcarousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
 
-      h2 {
-        font-size: 1.5rem;
-        margin-bottom: 15px;
-      }
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap-detail.min.css" rel="stylesheet" />
 
-      form {
-        display: flex;
-        flex-direction: column;
-      }
-
-      form label {
-        margin-bottom: 5px;
-        font-weight: bold;
-        color: #555;
-      }
-
-      form input {
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 2px solid #28a745;
-        border-radius: 5px;
-        width: 100%;
-      }
-
-      select {
-        padding: 10px;
-        margin-bottom: 20px;
-        border: 2px solid #28a745;
-        border-radius: 5px;
-        width: 100%;
-      }
-
-      .order-summary {
-        border: 1px solid #ccc;
-        padding: 20px;
-        border-radius: 10px;
-      }
-
-      .order-summary div {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 10px;
-      }
-
-      .order-summary h3 {
-        margin-bottom: 10px;
-        font-weight: bold;
-      }
-
-      .bank-details {
-        background-color: #f9f9f9;
-        padding: 15px;
-        border-radius: 5px;
-      }
-
-      button {
-        width: 100%;
-        padding: 10px;
-        background-color: #28a745;
-        color: white;
-        font-weight: bold;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-      }
-
-      button:hover {
-        background-color: #f95f09;
-      }
-
-      .popup-overlay {
-        display: none; /* Awalnya disembunyikan */
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.7); /* Warna gelap transparan */
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-      }
-
-      /* Gaya untuk isi pop-up */
-      .popup-content {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        max-width: 300px;
-        width: 80%;
-      }
-
-      /* Gaya tombol tutup */
-      .close-btn {
-        background-color: #f44336;
-        color: #fff;
-        border: none;
-        padding: 10px;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-top: 10px;
-      }
-    </style>
+    <!-- Template Stylesheet -->
+    <link href="css/checkout.css" rel="stylesheet" />
   </head>
 
   <body>
-    <div class="container">
-      <div class="grid">
-        <div>
-          <h2>Checkout</h2>
-          <form>
-            <label>Nama Lengkap<span style="color: red">*</span></label>
-            <input type="text" placeholder="Nama Lengkap" />
+    <!-- Single Page Header start -->
+    <div class="container-fluid page-header py-5">
+      <h1 class="text-center text-white display-6">Checkout</h1>
+      <ol class="breadcrumb justify-content-center mb-0">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+        <li class="breadcrumb-item active text-white">Checkout</li>
+      </ol>
+    </div>
+    <!-- Single Page Header End -->
 
-            <label>Pre-Order (jika Pre-order)</label>
-            <input type="date" />
+    <!-- Checkout Page Start -->
+    <div class="container-fluid py-5" style="margin-top: 50px">
+      <div class="container py-5">
+        <h1 class="mb-4">Detail Pembayaran</h1>
+        <form action="#">
+          <div class="row g-5">
+            <div class="col-md-12 col-lg-6 col-xl-7">
+              <div class="row">
+                <div class="col-md-12 col-lg-6">
+                  <div class="form-item w-100">
+                    <label class="form-label my-3">Nama<sup>*</sup></label>
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+                <div class="col-md-12 col-lg-6">
+                  <div class="form-item w-100">
+                    <label class="form-label my-3"
+                      >Nama Akhir<sup>*</sup></label
+                    >
+                    <input type="text" class="form-control" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-item">
+                <label class="form-label my-3"
+                  >Pre-order (jika pre-order) <sup></sup
+                ></label>
+                <input type="date" class="form-control" />
+              </div>
+              <div class="form-item">
+                <label class="form-label my-3">No Telepon <sup>*</sup></label>
+                <input type="text" class="form-control" />
+              </div>
 
-            <label>No HP<span style="color: red">*</span></label>
-            <input type="text" placeholder="No HP" />
-
-            <label>Provinsi<span style="color: red">*</span></label>
-            <select id="provinsi">
-              <option value="">Pilih Provinsi</option>
-            </select>
-
-            <label>Kabupaten/Kota<span style="color: red">*</span></label>
-            <select id="kabupaten">
-              <option value="">Pilih Kabupaten/Kota</option>
-            </select>
-
-            <label>Kecamatan<span style="color: red">*</span></label>
-            <select id="kecamatan">
-              <option value="">Pilih Kecamatan</option>
-            </select>
-
-            <label>Desa<span style="color: red">*</span></label>
-            <select id="desa">
-              <option value="">Pilih Desa</option>
-            </select>
-
-            <label>Detail Alamat<span style="color: red">*</span></label>
-            <input type="text" placeholder="Detail Alamat" />
-          </form>
-        </div>
-
-        <div>
-          <h2>Your order</h2>
-          <div class="order-summary">
-            <div>
-              <span>Product</span>
-              <span>Subtotal</span>
+              <div class="form-item">
+                <label class="form-label my-3">Provinsi<sup>*</sup></label>
+                <select
+                  id="provinsi"
+                  class="form-control"
+                  onchange="fetchKabupaten()"
+                  style="background-color: #ffffff"
+                >
+                  <option value="">Pilih Provinsi</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label class="form-label my-3"
+                  >Kabupaten/Kota<sup>*</sup></label
+                >
+                <select
+                  id="kabupaten"
+                  class="form-control"
+                  onchange="fetchKecamatan()"
+                  style="background-color: #ffffff"
+                >
+                  <option value="">Pilih Kabupaten/Kota</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label class="form-label my-3">Kecamatan<sup>*</sup></label>
+                <select
+                  id="kecamatan"
+                  class="form-control"
+                  onchange="fetchdesa()"
+                  style="background-color: #ffffff"
+                >
+                  <option value="">Pilih Kecamatan</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label class="form-label my-3">Desa<sup>*</sup></label>
+                <select
+                  id="desa"
+                  class="form-control"
+                  style="background-color: #ffffff"
+                >
+                  <option value="">Pilih Desa</option>
+                </select>
+              </div>
+              <div class="form-item">
+                <label class="form-label my-3">Detail Alamat<sup>*</sup></label>
+                <input type="text" class="form-control" />
+              </div>
+              <hr />
+              <div class="form-item">
+                <textarea
+                  name="text"
+                  class="form-control"
+                  spellcheck="false"
+                  cols="30"
+                  rows="11"
+                  placeholder="Catatan untuk penjual (Optional)"
+                ></textarea>
+              </div>
             </div>
-            <hr />
-            <div>
-              <span>Beras sehat</span>
-              <span>Rp 12.000</span>
-            </div>
+            <div class="col-md-12 col-lg-6 col-xl-5">
+              <div class="table-responsive">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th scope="col">Produk</th>
+                      <th scope="col">Nama</th>
+                      <th scope="col">Harga</th>
+                      <th scope="col">Jumlah</th>
+                      <th scope="col">Total</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex align-items-center mt-2">
+                          <img
+                            src="img/product-makanan-1.png"
+                            class="img-fluid rounded-circle"
+                            style="width: 90px; height: 90px"
+                            alt=""
+                          />
+                        </div>
+                      </th>
+                      <td class="py-5">vegetables</td>
+                      <td class="py-5">10.000</td>
+                      <td class="py-5">2</td>
+                      <td class="py-5">Rp20.000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex align-items-center mt-2">
+                          <img
+                            src="img/product-makanan-2.png"
+                            class="img-fluid rounded-circle"
+                            style="width: 90px; height: 90px"
+                            alt=""
+                          />
+                        </div>
+                      </th>
+                      <td class="py-5">Roti kentang</td>
+                      <td class="py-5">15.000</td>
+                      <td class="py-5">1</td>
+                      <td class="py-5">Rp15.000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">
+                        <div class="d-flex align-items-center mt-2">
+                          <img
+                            src="img/product-thumb-18.png"
+                            class="img-fluid rounded-circle"
+                            style="width: 90px; height: 90px"
+                            alt=""
+                          />
+                        </div>
+                      </th>
+                      <td class="py-5">Organic Bunny</td>
+                      <td class="py-5">25.00</td>
+                      <td class="py-5">2</td>
+                      <td class="py-5">Rp50.000</td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="py-5"></td>
+                      <td class="py-5"></td>
+                      <td class="py-5">
+                        <p class="mb-0 text-dark py-3">Subtotal</p>
+                      </td>
+                      <td class="py-5">
+                        <div class="py-3 border-bottom border-top">
+                          <p class="mb-0 text-dark">Rp85.000</p>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="py-5">
+                        <p class="mb-0 text-dark py-4">Voucermu</p>
+                      </td>
+                      <td colspan="3" class="py-5">
+                        <div class="form-check text-start">
+                          <input
+                            type="checkbox"
+                            class="form-check-input bg-primary border-0"
+                            id="Shipping-1"
+                            name="Shipping-1"
+                            value="Shipping"
+                          />
+                          <label class="form-check-label" for="Shipping-1"
+                            >Voucer Gratis Ongkir</label
+                          >
+                        </div>
+                        <div class="form-check text-start">
+                          <input
+                            type="checkbox"
+                            class="form-check-input bg-primary border-0"
+                            id="Shipping-2"
+                            name="Shipping-1"
+                            value="Shipping"
+                          />
+                          <label class="form-check-label" for="Shipping-2"
+                            >Cashback 30%</label
+                          >
+                        </div>
+                        <div class="form-check text-start">
+                          <input
+                            type="checkbox"
+                            class="form-check-input bg-primary border-0"
+                            id="Shipping-3"
+                            name="Shipping-1"
+                            value="Shipping"
+                          />
+                          <label class="form-check-label" for="Shipping-3"
+                            >Diskon 11:11</label
+                          >
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row"></th>
+                      <td class="py-5">
+                        <p class="mb-0 text-dark text-uppercase py-3">TOTAL</p>
+                      </td>
+                      <td class="py-5"></td>
+                      <td class="py-5"></td>
+                      <td class="py-5">
+                        <div class="py-3 border-bottom border-top">
+                          <p class="mb-0 text-dark">Rp65.000</p>
+                        </div>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
 
-            <div>
-              <span>Marta Bakery</span>
-              <span>Rp 50.000</span>
+              <div
+                class="row g-4 text-center align-items-center justify-content-center border-bottom py-3"
+              >
+                <ul style="list-style-type: none; padding-left: 0">
+                  <li style="display: flex; align-items: center">
+                    <input type="radio" name="bank" value="bca" />
+                    <img
+                      src="img/BCA.png"
+                      alt="BCA"
+                      style="margin-left: 10px; margin-right: 10px; width: 50px"
+                    />
+                    BCA
+                  </li>
+                  <br />
+                  <li style="display: flex; align-items: center">
+                    <input type="radio" name="bank" value="bri" />
+                    <img
+                      src="img/BRI.png"
+                      alt="BRI"
+                      style="margin-left: 10px; margin-right: 10px; width: 50px"
+                    />
+                    BRI
+                  </li>
+                  <br />
+                  <li style="display: flex; align-items: center">
+                    <input type="radio" name="bank" value="mandiri" />
+                    <img
+                      src="img/MANDIRI.png"
+                      alt="Mandiri"
+                      style="margin-left: 10px; margin-right: 10px; width: 50px"
+                    />
+                    Mandiri
+                  </li>
+                  <br />
+                  <li style="display: flex; align-items: center">
+                    <input type="radio" name="bank" value="bni" />
+                    <img
+                      src="img/BNI.png"
+                      alt="BNI"
+                      style="margin-left: 10px; margin-right: 10px; width: 50px"
+                    />
+                    BNI
+                  </li>
+                  <br />
+                  <li style="display: flex; align-items: center">
+                    <input type="radio" name="bank" value="COD" />
+                    <img
+                      src="img/COD.png"
+                      alt="COD"
+                      style="margin-left: 10px; margin-right: 10px; width: 50px"
+                    />
+                    COD
+                  </li>
+                </ul>
+                <div class="bank-details">
+                  <p>
+                    Lakukan pembayaran Anda langsung ke rekening bank kami,
+                    nomer Rekening akan ditampilkan setelah proses ini. Pesanan
+                    Anda akan dikirim setelah kami menerima pembayaran.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="row g-4 text-center align-items-center justify-content-center pt-4"
+              >
+                <button
+                  type="button"
+                  class="btn border-secondary py-3 px-4 text-uppercase w-100 text-primary"
+                  onclick="showPopup()"
+                >
+                  Place Order
+                </button>
+              </div>
             </div>
-            <div>
-              <span>Green salad</span>
-              <span>Rp 12.000</span>
-            </div>
-            <hr />
-            <div>
-              <span>Ongkos Kirim</span>
-              <span>Rp 10.000</span>
-            </div>
-            <div>
-              <span>Total</span>
-              <span>Rp 84.000</span>
-            </div>
-
-            <h3>Transfer Bank Manual</h3>
-            <ul style="list-style-type: none; padding-left: 0">
-              <li style="display: flex; align-items: center">
-                <input type="radio" name="bank" value="bca" />
-                <img
-                  src="img/BCA.png"
-                  alt="BCA"
-                  style="margin-left: 10px; margin-right: 10px; width: 50px"
-                />
-                BCA
-              </li>
-              <br />
-              <li style="display: flex; align-items: center">
-                <input type="radio" name="bank" value="bri" />
-                <img
-                  src="img/BRI.png"
-                  alt="BRI"
-                  style="margin-left: 10px; margin-right: 10px; width: 50px"
-                />
-                BRI
-              </li>
-              <br />
-              <li style="display: flex; align-items: center">
-                <input type="radio" name="bank" value="mandiri" />
-                <img
-                  src="img/MANDIRI.png"
-                  alt="Mandiri"
-                  style="margin-left: 10px; margin-right: 10px; width: 50px"
-                />
-                Mandiri
-              </li>
-              <br />
-              <li style="display: flex; align-items: center">
-                <input type="radio" name="bank" value="bni" />
-                <img
-                  src="img/BNI.png"
-                  alt="BNI"
-                  style="margin-left: 10px; margin-right: 10px; width: 50px"
-                />
-                BNI
-              </li>
-              <br />
-              <li style="display: flex; align-items: center">
-                <input type="radio" name="bank" value="COD" />
-                <img
-                  src="img/COD.png"
-                  alt="COD"
-                  style="margin-left: 10px; margin-right: 10px; width: 50px"
-                />
-                COD
-              </li>
-            </ul>
-            <div class="bank-details">
-              <p>
-                Lakukan pembayaran Anda langsung ke rekening bank kami, nomer
-                Rekening akan ditampilkan setelah proses ini. Pesanan Anda akan
-                dikirim setelah kami menerima pembayaran.
-              </p>
-            </div>
-
-            <button onclick="showPopup()">PLACE ORDER</button>
           </div>
-        </div>
+        </form>
       </div>
     </div>
 
@@ -288,13 +373,28 @@
         <h2>Place Order Berhasil</h2>
         <p>Silakan lakukan pembayaran ke nomor BRIVA berikut:</p>
         <h3>12345-67890-12345</h3>
-        <!-- Ganti dengan nomor BRIVA yang sebenarnya -->
         <button class="close-btn" onclick="closePopup()">Tutup</button>
       </div>
     </div>
+    <!-- Checkout Page End -->
 
+    <!-- Footer Start -->
+    @include ('/partials/footer')
+    <!-- Footer End -->
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="/Checkout/main.js" defer></script>
+
+    <!-- API wilyah indo -->
     <script>
-      // API Fetch Provinsi
       fetch("https://ibnux.github.io/data-indonesia/provinsi.json")
         .then((response) => response.json())
         .then((data) => {
@@ -379,10 +479,13 @@
         document.getElementById("popup").style.display = "flex";
       }
 
-      // Fungsi untuk menutup pop-up
+      // Fungsi buat nutup pop-up
       function closePopup() {
         window.location.href = "{{url ('/produk')}}";
       }
     </script>
   </body>
 </html>
+
+
+

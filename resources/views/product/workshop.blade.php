@@ -14,7 +14,7 @@
               <div class="image-holder zoom-effect">
                 <a href="#">
                   <img
-                    src="img/workshop-1.jpg"
+                    src="img/workshop-2.jpg"
                     alt="post"
                     class="card-img-top"
                   />
@@ -116,7 +116,7 @@
               <div class="image-holder zoom-effect">
                 <a href="#">
                   <img
-                    src="img/workshop-2.jpg"
+                    src="img/"
                     alt="post"
                     class="card-img-top"
                   />
@@ -218,7 +218,7 @@
               <div class="image-holder zoom-effect">
                 <a href="#">
                   <img
-                    src="img/workshop-3.jpg"
+                    src="img/workshop-4.jpg"
                     alt="post"
                     class="card-img-top"
                   />
@@ -331,7 +331,7 @@
               <div class="image-holder zoom-effect">
                 <a href="#">
                   <img
-                    src="img/workshop-4.jpg"
+                    src="img/workshop-3.jpg"
                     alt="post"
                     class="card-img-top"
                   />
@@ -433,7 +433,7 @@
               <div class="image-holder zoom-effect">
                 <a href="#">
                   <img
-                    src="img/workshop-5.jpg"
+                    src="img/workshop-2.jpg"
                     alt="post"
                     class="card-img-top"
                   />
@@ -535,7 +535,7 @@
               <div class="image-holder zoom-effect">
                 <a href="#">
                   <img
-                    src="img/workshop-6.jpg"
+                    src="img/workshop-2.jpg"
                     alt="post"
                     class="card-img-top"
                   />

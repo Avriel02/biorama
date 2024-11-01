@@ -951,3 +951,29 @@
 .nav-item.active .nav-link {
     color: green; /* Warna link yang aktif */
 }
+
+@media (max-width: 768px) {
+    .section {
+        flex-direction: column;
+        padding: 50px 20px;
+        margin-bottom: 100px;
+    }
+    .section--tertiary-text {
+        font-size: 36px;
+        text-align: center;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .section--form {
+        width: 100%;
+        height: auto;
+        position: relative;
+        top: 0;
+        right: 0;
+        padding: 30px 20px;
+        box-shadow: none;
+    }
+    .section--form-text {
+        font-size: 28px;
+    }
+}

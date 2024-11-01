@@ -1,0 +1,175 @@
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    overflow: hidden;
+    width: 100%;
+    max-width: 500px; /* Kurangi lebar maksimum */
+    flex-direction: column; /* Ubah menjadi kolom */
+    align-items: center; /* Pusatkan elemen secara horizontal */
+    justify-content: center; /* Pusatkan elemen secara vertikal */
+    padding: 20px; /* Tambahkan padding */
+}
+
+.register-container {
+    width: 100%;
+    text-align: center; /* Pusatkan teks */
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.register-container h1 {
+    color: #6bb252;
+    margin-bottom: 20px;
+    font-size: 24px; /* Kurangi ukuran font */
+    font-weight: 600;
+}
+
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"] {
+    width: 100%;
+    padding: 10px; /* Kurangi padding */
+    margin: 5px 0; /* Kurangi margin */
+    border: 1px solid #ddd;
+    border-radius: 20px; /* Kurangi border-radius */
+    font-size: 14px; /* Kurangi ukuran font */
+    transition: border-color 0.3s;
+    box-sizing: border-box;
+}
+
+.register-container input[type="text"]:focus,
+.register-container input[type="email"]:focus,
+.register-container input[type="password"]:focus {
+    border-color: #6bb252;
+}
+
+.register-container button {
+    background-color: #6bb252;
+    color: white;
+    padding: 10px; /* Kurangi padding */
+    border: none;
+    border-radius: 20px; /* Kurangi border-radius */
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px; /* Kurangi ukuran font */
+    font-weight: 600;
+    transition: background-color 0.3s;
+    margin-top: 10px; /* Kurangi margin-top */
+    box-sizing: border-box;
+}
+
+.register-container button:hover {
+    background-color: #5aa040;
+}
+
+.register-container .form-check-label {
+    color: #333;
+}
+
+.register-container .text-primary {
+    color: #6bb252 !important;
+}
+
+.register-container .additional-links {
+    margin-top: 10px; /* Kurangi margin-top */
+    font-size: 12px; /* Kurangi ukuran font */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bg-image {
+    position: absolute; /* Tambahkan ini */
+    top: 0; /* Tambahkan ini */
+    left: 0; /* Tambahkan ini */
+    width: 100%; /* Tambahkan ini */
+    height: 108%; /* Tambahkan ini */
+    object-fit: cover; /* Tambahkan ini */
+    z-index: -1; /* Tambahkan ini */
+}
+
+.register-container .additional-links p {
+    margin: 0;
+}
+
+.register-container .additional-links a {
+    color: #6bb252;
+    text-decoration: none;
+    margin-left: 5px; /* Tambahkan margin kiri */
+}
+
+.register-container .additional-links a:hover {
+    text-decoration: underline;
+}
+
+.register-container .icon {
+    font-size: 40px; /* Kurangi ukuran font */
+    color: #6bb252;
+    margin-bottom: 20px;
+}
+
+.register-container .form-label {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.image-container {
+    display: none; /* Sembunyikan gambar untuk tampilan lebih kompak */
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .register-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .register-container {
+        padding: 10px; /* Kurangi padding */
+    }
+
+    .register-container h1 {
+        font-size: 20px; /* Kurangi ukuran font */
+    }
+
+    .register-container button {
+        font-size: 14px; /* Kurangi ukuran font */
+        padding: 8px; /* Kurangi padding */
+    }
+
+    .register-container .icon {
+        font-size: 30px; /* Kurangi ukuran font */
+    }
+}

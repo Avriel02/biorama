@@ -51,7 +51,7 @@
               <h5 class="widget-title">Organic</h5>
               <ul class="menu-list list-unstyled">
                 <li class="menu-item">
-                  <a href="#" class="nav-link">About us</a>
+                  <a href="{{url ('/beranda')}}" class="nav-link">About us</a>
                 </li>
                 <li class="menu-item">
                   <a href="#" class="nav-link">Conditions </a>

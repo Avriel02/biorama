@@ -206,7 +206,7 @@
                           >
                             <p class="text-dark fs-5 fw-bold mb-0">Rp 20.000</p>
                             <a
-                              href="#"
+                              href="{{ url ('/detailcheckout') }}"
                               class="btn border border-secondary rounded-pill px-3 text-primary"
                               ><i class="fa fa-eye me-2 text-primary"></i> Lihat
                               Produk</a
@@ -238,7 +238,7 @@
                           >
                             <p class="text-dark fs-5 fw-bold mb-0">Rp 20.000</p>
                             <a
-                              href="#"
+                              href="{{ url ('/detailcheckout') }}"
                               class="btn border border-secondary rounded-pill px-3 text-primary"
                               ><i class="fa fa-eye me-2 text-primary"></i> Lihat
                               Produk</a
@@ -270,7 +270,7 @@
                           >
                             <p class="text-dark fs-5 fw-bold mb-0">Rp 20.000</p>
                             <a
-                              href="#"
+                              href="{{ url ('/detailcheckout') }}"
                               class="btn border border-secondary rounded-pill px-3 text-primary"
                               ><i class="fa fa-eye me-2 text-primary"></i> Lihat
                               Produk</a
@@ -302,7 +302,7 @@
                           >
                             <p class="text-dark fs-5 fw-bold mb-0">Rp 20.000</p>
                             <a
-                              href="#"
+                              href="{{ url ('/detailcheckout') }}"
                               class="btn border border-secondary rounded-pill px-3 text-primary"
                               ><i class="fa fa-eye me-2 text-primary"></i> Lihat
                               Produk</a
